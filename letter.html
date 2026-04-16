@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For You</title>
+    <link rel="stylesheet" href="letter_style.css">
+</head>
+
+<body>
+    <!-- Top Text -->
+    <div class="top-text">
+        <h1>for my jambun</h1>
+        <p>open here ↓</p>
+    </div>
+
+    <div class="container">
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+
+                        <strong>Dear Jaimon,</strong>
+
+                        <p>I miss that up until a week ago, I would fall asleep with orbit gum stuck in my molars. I'd wake up to this sticky, gooey mess in my mouth and smile, reminiscing the night before.</p>
+
+                        <p>I miss your silly screaming from the week before the last at the Swarathma concert. You looked at me with this wide-eyed stare for approval and while I'd usually tell people to "calm down" and "relax" (especially if it was Saanvi), but I couldn't help but smile and hold you tighter than ever.</p>
+
+                        <p>3 weeks ago is when I realised your annoying Englishification of Kannada words had rubbed off on me. I'd be consistently using hit phrases such as "The AC is not bartha-ing to my side" with Purvi.</p>
+
+                        <p>4 weeks ago, I was so proud watching you from the audience perform at the delta fest. I was smiling the whole time I was recording (got so angwy that a particular someone was covering you, so I bolted to the other end of you so I could get decent videos).</p>
+
+                        <p>5 weeks ago is when every time I'd mess up your hair with my hands I'd think about how future me would be sad when you'd cut your hair because the really long chunk of hair would be gone. I am indeed very sad.</p>
+
+                        <p>6 weeks ago is when my friends wouldn't stop asking where I've been for half the trimester and when I smiled cheekily, they'd just know.</p>
+
+                        <p>7 weeks ago, my phone started to self destruct because of the plethora of pretty pictures I'd have of you at that point in time (not enough).</p>
+
+                        <p>And 8 weeks ago is when I started seriously praying to the Sai Baba idol in my room for this trimester to never end.</p>
+
+                        <p>I miss you and I hope these 8 weeks fly by just as the previous 8 weeks did.</p>
+
+                        <br>
+
+                        <p class="signature">
+                        Love,<br>
+                        Lakshmi &lt;3
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="heart"></div>
+        </div>
+    </div>
+
+    <!-- Music -->
+    <audio id="bg-music" loop>
+        <source src="music.mp3" type="audio/mpeg">
+    </audio>
+
+    <script>
+        const envelope = document.querySelector(".envelope-wrapper");
+        const heart = document.querySelector(".heart");
+        const music = document.getElementById("bg-music");
+
+        heart.addEventListener("click", () => {
+            envelope.classList.toggle("flap");
+            music.play();
+        });
+    </script>
+
+</body>
+</html>
